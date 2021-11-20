@@ -1,0 +1,31 @@
+/******************************
+  ESTILOS SECCION DESTINOS
+*******************************/
+.centrado {
+    text-align: center;
+}
+.tarjetaDestino {
+    border: solid 3px rgb(121, 121, 121);
+}
+.tarjetaDestino__img {
+    padding: 3%;
+}
+@mixin tamanioUbic ($ancho, $margenL) {
+    width: $ancho;
+    margin-left: $margenL;
+}
+.tarjetaDestino__img--filip {
+    @include tamanioUbic(47%, 20%)
+}
+.tarjetaDestino__img--tai {
+    @include tamanioUbic(44%, 29%)
+}
+.tarjetaDestino__img--vietnam {
+    @include tamanioUbic(41%, 29%)
+}
+
+/* ANIMACIONES */
+.anim-Destino:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}

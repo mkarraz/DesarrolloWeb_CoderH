@@ -1,0 +1,79 @@
+/******************** 
+  ESTILOS GENERALES 
+*********************/
+.mainBackground {
+    background-image: url('../images/papyrus.png') !important;
+}
+.seccionGral {
+    padding: 3%; 
+}
+.seccionGral--fbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.seccionGral__h1 {
+    font-family: 'Irish Grover', cursive !important;
+    color: #9078b4;
+    text-shadow:4px 1px 1px black;
+    padding: 40px 20px 20px 20px;
+    font-size: 8vw;
+}
+body {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif !important;
+}
+.border {
+    border: solid 1px black;
+}
+.negrita {
+    font-weight: bold;
+}
+.boxModel-padding {
+    padding: 3%;
+}
+.paddingGral {
+    padding: 3%;
+}
+.footerBox {
+    background-color: rgb(226, 228, 227);
+    text-align: center;
+    .footerBox__copyr {
+        @extend .footerBox;
+        background-color: black;
+        color: white;
+    }
+}
+
+$coloresBkg:(
+    youtube: #c90c0c,
+    facebook: #220f88,
+    instagram: #daa107,
+    twitter: #00dbf8
+);
+@each $red-social, $bgcolor in $coloresBkg {
+    .btn-bkg-#{$red-social} {
+        background-color: $bgcolor;
+    }
+}
+
+/* ANIMACIONES */
+/* COTIZA TU PLAN */
+@keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+.blink-1:hover {
+	-webkit-animation: blink-1 0.6s both;
+	        animation: blink-1 0.6s both;
+            animation-iteration-count: infinite;
+}

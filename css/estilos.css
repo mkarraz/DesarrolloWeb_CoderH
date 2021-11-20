@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Zen+Kaku+Gothic+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique&display=swap");
+/* Reseteo gral */
+* {
+  margin: 0;
+  padding: 0; }
+
+/******************** 
+  ESTILOS GENERALES 
+*********************/
+.mainBackground {
+  background-image: url("../images/papyrus.png") !important; }
+
+.seccionGral {
+  padding: 3%; }
+
+.seccionGral--fbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.seccionGral__h1 {
+  font-family: 'Irish Grover', cursive !important;
+  color: #9078b4;
+  text-shadow: 4px 1px 1px black;
+  padding: 40px 20px 20px 20px;
+  font-size: 8vw; }
+
+body {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif !important; }
+
+.border {
+  border: solid 1px black; }
+
+.negrita {
+  font-weight: bold; }
+
+.boxModel-padding {
+  padding: 3%; }
+
+.paddingGral {
+  padding: 3%; }
+
+.footerBox, .footerBox .footerBox__copyr {
+  background-color: #e2e4e3;
+  text-align: center; }
+  .footerBox .footerBox__copyr {
+    background-color: black;
+    color: white; }
+
+.btn-bkg-youtube {
+  background-color: #c90c0c; }
+
+.btn-bkg-facebook {
+  background-color: #220f88; }
+
+.btn-bkg-instagram {
+  background-color: #daa107; }
+
+.btn-bkg-twitter {
+  background-color: #00dbf8; }
+
+/* ANIMACIONES */
+/* COTIZA TU PLAN */
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
+
+.blink-1:hover {
+  -webkit-animation: blink-1 0.6s both;
+  animation: blink-1 0.6s both;
+  animation-iteration-count: infinite; }
+
+/******************************
+  ESTILOS SECCION INDEX
+*******************************/
+.titSeccion2, .titSeccion2--dos, .titSeccion2--tres {
+  text-align: center;
+  text-shadow: 4px 1px 1px black;
+  color: #d487e4; }
+
+.titSeccion2--dos {
+  color: #cd51e6; }
+
+.titSeccion2--tres {
+  color: #bd03e2; }
+
+/* ANIMACIONES */
+/* Sección 2 */
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%; }
+  100% {
+    -webkit-transform: scale(1.08) translateY(15px);
+    transform: scale(1.08) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom; } }
+
+.agranda-imagen:hover {
+  -webkit-animation: kenburns-bottom 0.25s ease-out both;
+  animation: kenburns-bottom 0.25s ease-out both; }
+
+/* Viaja con Nosotros */
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 2;
+    color: #7645ad; } }
+
+.parpadeo {
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-name: aparecer; }
+
+/******************************
+  ESTILOS SECCION DESTINOS
+*******************************/
+.centrado {
+  text-align: center; }
+
+.tarjetaDestino {
+  border: solid 3px #797979; }
+
+.tarjetaDestino__img {
+  padding: 3%; }
+
+.tarjetaDestino__img--filip {
+  width: 47%;
+  margin-left: 20%; }
+
+.tarjetaDestino__img--tai {
+  width: 44%;
+  margin-left: 29%; }
+
+.tarjetaDestino__img--vietnam {
+  width: 41%;
+  margin-left: 29%; }
+
+/* ANIMACIONES */
+.anim-Destino:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+/******************************
+  ESTILOS SECCION ARTICULOS
+*******************************/
+/* TABLA */
+table {
+  border: none;
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 5%; }
+
+th:empty {
+  background: transparent;
+  border: none;
+  width: auto; }
+
+th {
+  color: white;
+  font-size: 3vw;
+  border: 2px solid white;
+  text-shadow: 3px 1px 1px #000000;
+  padding: 1%;
+  width: 35%;
+  height: 85%;
+  background-image: linear-gradient(to top, #d9b4ee, #ab7de7); }
+
+td {
+  border: 2px solid white;
+  text-align: center;
+  padding: 2%; }
+
+.tdFecha {
+  text-align: center;
+  background-color: #d9b4ee;
+  font-size: 2vw; }
+
+.topics {
+  text-decoration: none;
+  font-size: 2vw; }
+
+.topics--color {
+  color: black; }
+
+.tdLista {
+  text-align: left;
+  background-image: linear-gradient(to right, #d9b4ee, #ab7de7); }
+
+.tdPais {
+  color: white;
+  font-size: 3vw;
+  width: 20%;
+  border: 2px solid white;
+  text-shadow: 3px 1px 1px #000000;
+  background-image: linear-gradient(to left, #d9b4ee, #ab7de7); }
+
+.olTabla {
+  margin-left: 5%; }
+  .olTabla li {
+    font-size: 2vw; }
+
+.aHovTabla:hover {
+  background-color: #ab7de7;
+  color: white; }
+
+/******************************
+  ESTILOS SECCION NOSOTROS
+*******************************/
+.nosBoxmFlbox {
+  padding: 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.nosBoxmFlbox__artBoxm {
+  margin: 5%;
+  padding: 3%;
+  border-style: outset;
+  border-top-color: #904fda;
+  border-left-color: #904fda;
+  background-image: url("../images/fondo.png"); }
+
+/* este cambia en escritorio */
+.nosBoxmFlbox__artFlbox {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+/* este cambia en escritorio */
+.imagNosotros {
+  width: 70%;
+  height: 70%;
+  padding: 2%;
+  border: 3px solid #8f5dbd;
+  margin: 4%; }
+
+.divNosotros {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.divNosotros__h2 {
+  color: #be7fe9;
+  text-shadow: 2px 1px 1px #ffffff;
+  padding: 1%;
+  font-size: 2.5vw;
+  font-family: 'Irish Grover', cursive !important; }
+
+/* este cambia en escritorio */
+.divNosotros__p {
+  padding: 2%;
+  text-align: justify;
+  font-size: 2vw;
+  color: white; }
+
+/*************************
+  ESTILOS SECCION PLAN
+**************************/
+.formu {
+  padding: 5%; }
+
+.formu__fieldset {
+    padding: 5%; 
+}
+.subcampo {
+  margin-bottom: 2.5%; 
+}
+.subcampo--mtop {
+  margin-top: 15%; 
+}
+textarea { 
+  width:100%;
+  margin:5px 0;
+  padding:3px;
+}
+.border-form {
+  border: solid 5px black; }
+
+.centrado {
+  text-align: center; }
+
+.transicion-input {
+  width: 30%;
+  transition: all 1.5s; }
+
+.transicion-input:focus {
+  width: 55%;
+  font-weight: bold;
+  font-size: larger; }
+
+/*****************
+   MEDIA QUERIES
+*****************/
+/* Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /******************** 
+      ESTILOS GENERALES 
+    *********************/ }
+
+/* Desktop */
+@media (min-width: 1025px) {
+  /******************************
+      ESTILOS SECCION NOSOTROS
+    *******************************/
+  .nosBoxmFlbox__artBoxm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+  .imagNosotros {
+    width: 40%;
+    height: 40%;
+    padding: 1%;
+    margin: 3%; }
+  .divNosotros__p {
+    padding: 2%;
+    text-align: justify;
+    font-size: 1vw; } }

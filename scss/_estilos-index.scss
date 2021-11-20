@@ -1,0 +1,54 @@
+/******************************
+  ESTILOS SECCION INDEX
+*******************************/
+.titSeccion2 {  
+  text-align: center;
+  text-shadow:4px 1px 1px black;
+  color: rgb(212, 135, 228);
+}
+.titSeccion2--dos {
+  @extend .titSeccion2;
+  color: rgb(205, 81, 230);
+}
+.titSeccion2--tres {
+  @extend .titSeccion2;
+  color: rgb(189, 3, 226);
+}
+
+/* ANIMACIONES */
+
+/* Sección 2 */
+@keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+              transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.08) translateY(15px);
+              transform: scale(1.08) translateY(15px);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+    }
+  }
+.agranda-imagen:hover {
+	-webkit-animation: kenburns-bottom 0.25s ease-out both;
+	        animation: kenburns-bottom 0.25s ease-out both;
+}
+
+/* Viaja con Nosotros */
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 2;
+      color: rgb(118, 69, 173);
+    }
+ }
+ .parpadeo {
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-name: aparecer;
+ }
