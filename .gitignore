@@ -1,0 +1,5 @@
+# Dentro de Gitignore armo una lista de objetos a ignorar
+
+#Ignoro la carpeta git_ignore que contiene node_modules
+
+git_ignore
