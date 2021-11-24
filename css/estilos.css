@@ -275,21 +275,13 @@ td {
 **************************/
 .formu {
   padding: 5%; }
+  .formu .formu__fieldset {
+    padding: 5%; }
+    .formu .formu__fieldset .subcampo {
+      margin-bottom: 2.5%; }
+    .formu .formu__fieldset .subcampo--mtop {
+      margin-top: 15%; }
 
-.formu__fieldset {
-    padding: 5%; 
-}
-.subcampo {
-  margin-bottom: 2.5%; 
-}
-.subcampo--mtop {
-  margin-top: 15%; 
-}
-textarea { 
-  width:100%;
-  margin:5px 0;
-  padding:3px;
-}
 .border-form {
   border: solid 5px black; }
 
