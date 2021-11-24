@@ -16,21 +16,26 @@
     /******************************
       ESTILOS SECCION NOSOTROS
     *******************************/
-    .nosBoxmFlbox__artBoxm {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .imagNosotros {
-        width: 40%;
-        height: 40%;
-        padding: 1%;
-        margin: 3%
-    }
-    .divNosotros__p {
-        padding: 2%;
-        text-align: justify;
-        font-size: 1vw;
-    }
+    .nosBoxmFlbox {
+        &__artFlbox {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .imagNosotros {
+                width: 40%;
+                height: 40%;
+                padding: 1%;
+                margin: 3%
+            }
+            .divNosotros {
+                &__p {
+                    padding: 2%;
+                    text-align: justify;
+                    font-size: 1vw;
+                }
+            }
+        }
+    } 
 }

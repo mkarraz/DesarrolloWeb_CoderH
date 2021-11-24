@@ -3,28 +3,32 @@
 **************************/
 .formu {
     padding: 5%;
-    .formu__fieldset {
+    &__fieldset {
         padding: 5%;
+
         .subcampo {
             margin-bottom: 2.5%;
         }
+
         .subcampo--mtop {
             margin-top: 15%;
         }
+    }
+
+    .centrado {
+        text-align: center;
     }
 }
 .border-form {
     border: solid 5px black;
 }
-.centrado {
-    text-align: center;
-}
 .transicion-input {
     width: 30%;
     transition: all 1.5s;
-}
-.transicion-input:focus {
-    width: 55%;
-    font-weight: bold;
-    font-size: larger;
+
+    &:focus {
+        width: 55%;
+        font-weight: bold;
+        font-size: larger;
+    }
 }

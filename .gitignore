@@ -3,3 +3,4 @@
 #Ignoro la carpeta git_ignore que contiene node_modules
 
 git_ignore
+node_modules

@@ -12,23 +12,20 @@
 *********************/
 .mainBackground {
   background-image: url("../images/papyrus.png") !important; }
-
-.seccionGral {
-  padding: 3%; }
-
-.seccionGral--fbox {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
-
-.seccionGral__h1 {
-  font-family: 'Irish Grover', cursive !important;
-  color: #9078b4;
-  text-shadow: 4px 1px 1px black;
-  padding: 40px 20px 20px 20px;
-  font-size: 8vw; }
+  .mainBackground .seccionGral {
+    padding: 3%; }
+    .mainBackground .seccionGral__h1 {
+      font-family: 'Irish Grover', cursive !important;
+      color: #9078b4;
+      text-shadow: 4px 1px 1px black;
+      padding: 40px 20px 20px 20px;
+      font-size: 8vw; }
+  .mainBackground .seccionGral--fbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
 
 body {
   font-family: 'Zen Kaku Gothic Antique', sans-serif !important; }
@@ -45,10 +42,10 @@ body {
 .paddingGral {
   padding: 3%; }
 
-.footerBox, .footerBox .footerBox__copyr {
+.footerBox, .footerBox__copyr {
   background-color: #e2e4e3;
   text-align: center; }
-  .footerBox .footerBox__copyr {
+  .footerBox__copyr {
     background-color: black;
     color: white; }
 
@@ -128,26 +125,21 @@ body {
 /******************************
   ESTILOS SECCION DESTINOS
 *******************************/
-.centrado {
-  text-align: center; }
-
 .tarjetaDestino {
   border: solid 3px #797979; }
-
-.tarjetaDestino__img {
-  padding: 3%; }
-
-.tarjetaDestino__img--filip {
-  width: 47%;
-  margin-left: 20%; }
-
-.tarjetaDestino__img--tai {
-  width: 44%;
-  margin-left: 29%; }
-
-.tarjetaDestino__img--vietnam {
-  width: 41%;
-  margin-left: 29%; }
+  .tarjetaDestino__img {
+    padding: 3%; }
+    .tarjetaDestino__img--filip {
+      width: 47%;
+      margin-left: 20%; }
+    .tarjetaDestino__img--tai {
+      width: 44%;
+      margin-left: 29%; }
+    .tarjetaDestino__img--vietnam {
+      width: 41%;
+      margin-left: 29%; }
+  .tarjetaDestino .centrado {
+    text-align: center; }
 
 /* ANIMACIONES */
 .anim-Destino:hover {
@@ -221,77 +213,69 @@ td {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center; }
-
-.nosBoxmFlbox__artBoxm {
-  margin: 5%;
-  padding: 3%;
-  border-style: outset;
-  border-top-color: #904fda;
-  border-left-color: #904fda;
-  background-image: url("../images/fondo.png"); }
-
-/* este cambia en escritorio */
-.nosBoxmFlbox__artFlbox {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
-
-/* este cambia en escritorio */
-.imagNosotros {
-  width: 70%;
-  height: 70%;
-  padding: 2%;
-  border: 3px solid #8f5dbd;
-  margin: 4%; }
-
-.divNosotros {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start; }
-
-.divNosotros__h2 {
-  color: #be7fe9;
-  text-shadow: 2px 1px 1px #ffffff;
-  padding: 1%;
-  font-size: 2.5vw;
-  font-family: 'Irish Grover', cursive !important; }
-
-/* este cambia en escritorio */
-.divNosotros__p {
-  padding: 2%;
-  text-align: justify;
-  font-size: 2vw;
-  color: white; }
+  align-items: center;
+  /* este cambia en escritorio */ }
+  .nosBoxmFlbox__artFlbox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* este cambia en escritorio */ }
+    .nosBoxmFlbox__artFlbox .imagNosotros {
+      width: 70%;
+      height: 70%;
+      padding: 2%;
+      border: 3px solid #8f5dbd;
+      margin: 4%; }
+    .nosBoxmFlbox__artFlbox .divNosotros {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      /* este cambia en escritorio */ }
+      .nosBoxmFlbox__artFlbox .divNosotros__h2 {
+        color: #be7fe9;
+        text-shadow: 2px 1px 1px #ffffff;
+        padding: 1%;
+        font-size: 2.5vw;
+        font-family: 'Irish Grover', cursive !important; }
+      .nosBoxmFlbox__artFlbox .divNosotros__p {
+        padding: 2%;
+        text-align: justify;
+        font-size: 2vw;
+        color: white; }
+  .nosBoxmFlbox--artBoxm {
+    margin: 5%;
+    padding: 3%;
+    border-style: outset;
+    border-top-color: #904fda;
+    border-left-color: #904fda;
+    background-image: url("../images/fondo.png"); }
 
 /*************************
   ESTILOS SECCION PLAN
 **************************/
 .formu {
   padding: 5%; }
-  .formu .formu__fieldset {
+  .formu__fieldset {
     padding: 5%; }
-    .formu .formu__fieldset .subcampo {
+    .formu__fieldset .subcampo {
       margin-bottom: 2.5%; }
-    .formu .formu__fieldset .subcampo--mtop {
+    .formu__fieldset .subcampo--mtop {
       margin-top: 15%; }
+  .formu .centrado {
+    text-align: center; }
 
 .border-form {
   border: solid 5px black; }
 
-.centrado {
-  text-align: center; }
-
 .transicion-input {
   width: 30%;
   transition: all 1.5s; }
-
-.transicion-input:focus {
-  width: 55%;
-  font-weight: bold;
-  font-size: larger; }
+  .transicion-input:focus {
+    width: 55%;
+    font-weight: bold;
+    font-size: larger; }
 
 /*****************
    MEDIA QUERIES
@@ -307,17 +291,17 @@ td {
   /******************************
       ESTILOS SECCION NOSOTROS
     *******************************/
-  .nosBoxmFlbox__artBoxm {
+  .nosBoxmFlbox__artFlbox {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center; }
-  .imagNosotros {
-    width: 40%;
-    height: 40%;
-    padding: 1%;
-    margin: 3%; }
-  .divNosotros__p {
-    padding: 2%;
-    text-align: justify;
-    font-size: 1vw; } }
+    .nosBoxmFlbox__artFlbox .imagNosotros {
+      width: 40%;
+      height: 40%;
+      padding: 1%;
+      margin: 3%; }
+    .nosBoxmFlbox__artFlbox .divNosotros__p {
+      padding: 2%;
+      text-align: justify;
+      font-size: 1vw; } }

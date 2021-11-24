@@ -3,24 +3,30 @@
 *********************/
 .mainBackground {
     background-image: url('../images/papyrus.png') !important;
+
+    .seccionGral {
+        padding: 3%; 
+
+        &__h1 {
+            font-family: 'Irish Grover', cursive !important;
+            color: #9078b4;
+            text-shadow:4px 1px 1px black;
+            padding: 40px 20px 20px 20px;
+            font-size: 8vw;
+        }
+    }
+
+    .seccionGral--fbox {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
-.seccionGral {
-    padding: 3%; 
-}
-.seccionGral--fbox {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.seccionGral__h1 {
-    font-family: 'Irish Grover', cursive !important;
-    color: #9078b4;
-    text-shadow:4px 1px 1px black;
-    padding: 40px 20px 20px 20px;
-    font-size: 8vw;
-}
+
+
+
 body {
     font-family: 'Zen Kaku Gothic Antique', sans-serif !important;
 }
@@ -39,7 +45,8 @@ body {
 .footerBox {
     background-color: rgb(226, 228, 227);
     text-align: center;
-    .footerBox__copyr {
+    
+    &__copyr {
         @extend .footerBox;
         background-color: black;
         color: white;
