@@ -38,16 +38,31 @@ td {
     background-color: $degrade-claro;
     font-size: 2vw;
 }
-.topics{
-    text-decoration: none;
-    font-size: 2vw;
-}
-.topics--color {
-    color: black;
-}
 .tdLista {
     text-align: left;
     background-image: linear-gradient(to right, $degrade-claro, $degrade-oscuro);
+
+    .olTabla {
+        margin-left: 5%;
+
+        li {
+            font-size: 2vw;
+        }
+
+        .topics{
+            text-decoration: none;
+            font-size: 2vw;
+        }
+
+        .topics--color {
+            color: black;
+        }
+
+        .aHovTabla:hover {
+            background-color: rgb(171, 125, 231);
+            color: white;
+        }
+    }
 }
 .tdPais {
     color: white;
@@ -56,14 +71,4 @@ td {
     border: 2px solid white;
     text-shadow:3px 1px 1px #000000;  
     background-image: linear-gradient(to left, $degrade-claro, $degrade-oscuro);
-}
-.olTabla {
-    margin-left: 5%;
-    li {
-        font-size: 2vw;
-    }
-}
-.aHovTabla:hover {
-    background-color: rgb(171, 125, 231);
-    color: white;
 }
