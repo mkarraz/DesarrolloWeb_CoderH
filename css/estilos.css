@@ -261,6 +261,8 @@ td {
     padding: 5%; }
     .formu__fieldset .subcampo {
       margin-bottom: 2.5%; }
+      .formu__fieldset .subcampo .textarea-boxm {
+        width: 100%; }
     .formu__fieldset .subcampo--mtop {
       margin-top: 15%; }
   .formu .centrado {
