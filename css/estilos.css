@@ -125,6 +125,11 @@ body {
 /******************************
   ESTILOS SECCION DESTINOS
 *******************************/
+.rowFlbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly; }
+
 .tarjetaDestino {
   border: solid 3px #797979; }
   .tarjetaDestino__img {
@@ -186,14 +191,11 @@ td {
   background-image: linear-gradient(to right, #d9b4ee, #ab7de7); }
   .tdLista .olTabla {
     margin-left: 5%; }
-    .tdLista .olTabla li {
-      font-size: 2vw; }
-    .tdLista .olTabla .topics {
+    .tdLista .olTabla__topics {
       text-decoration: none;
-      font-size: 2vw; }
-    .tdLista .olTabla .topics--color {
+      font-size: 2vw;
       color: black; }
-    .tdLista .olTabla .aHovTabla:hover {
+    .tdLista .olTabla__hover:hover {
       background-color: #ab7de7;
       color: white; }
 
@@ -282,12 +284,6 @@ td {
 /*****************
    MEDIA QUERIES
 *****************/
-/* Tablets */
-@media (min-width: 600px) and (max-width: 1024px) {
-  /******************** 
-      ESTILOS GENERALES 
-    *********************/ }
-
 /* Desktop */
 @media (min-width: 1025px) {
   /******************************

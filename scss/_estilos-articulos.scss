@@ -45,20 +45,13 @@ td {
     .olTabla {
         margin-left: 5%;
 
-        li {
-            font-size: 2vw;
-        }
-
-        .topics{
+        &__topics{
             text-decoration: none;
             font-size: 2vw;
-        }
-
-        .topics--color {
             color: black;
         }
 
-        .aHovTabla:hover {
+        &__hover:hover {
             background-color: rgb(171, 125, 231);
             color: white;
         }

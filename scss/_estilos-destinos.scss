@@ -6,6 +6,12 @@
     margin-left: $margenL;
 }
 
+.rowFlbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
 .tarjetaDestino {
     border: solid 3px rgb(121, 121, 121);
 
